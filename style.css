@@ -115,7 +115,7 @@ b {
 .warning {
     color: var(--color-warning);
 }
-/* ==================== aside ==================== */
+/* ==================== Start aside ==================== */
 aside {
     height: 100vh;
     /* background-color: grey; */
@@ -138,7 +138,9 @@ aside .logo img {
 aside .close {
     display: none;
 }
-/* ==================== sidebar ==================== */
+/* ==================== End aside ==================== */
+
+/* ==================== Start sidebar ==================== */
 aside .sidebar {
     /* background: white; */
     display: flex;
@@ -198,7 +200,9 @@ aside .sidebar .message-count {
     font-size: 11px;
     border-radius: var(--border-radius-1);
 }
-/* ==================== main ==================== */
+/* ==================== End sidebar ==================== */
+
+/* ==================== Start main ==================== */
 main {
     margin-top: 1.4rem;
 }
@@ -295,4 +299,46 @@ main .insights .progress .number {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+main .insights small {
+    margin-top: 1.3rem;
+    display: block;
+}
+/* ==================== End main ==================== */
+
+/* ==================== Start Recent ==================== */
+main .recent-orders {
+    /* background: var(--color-white); */
+
+    margin-top: 2rem;
+}
+main .recent-orders h2 {
+    margin-bottom: 0.8rem;
+}
+main .recent-orders table {
+    width: 100%;
+    background: var(--color-white);
+    padding: var(--card-border-radius);
+    border-radius: var(--card-border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+main .recent-orders table:hover {
+    box-shadow: none;
+}
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+main table tbody tr:last-child {
+    border-bottom: none;
+}
+
+main .recent-orders a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
 }
