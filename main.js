@@ -3,6 +3,7 @@ const aside = document.querySelector("aside");
 const menuBtn = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("close-btn");
 const themeToggler = document.querySelector(".theme-toggler");
+const addProduct = document.querySelector(".add-product");
 
 // On Mobile Sidebar open and close
 {
@@ -42,3 +43,24 @@ Orders.forEach((order) => {
     tr.innerHTML = trContent;
     document.querySelector("table tbody").appendChild(tr);
 });
+
+// Add Sales Analysis
+addProduct.addEventListener("click", (eo) => {
+    eo.parentElement.appendChild("sdsad");
+});
+
+// //
+
+// <div class="item customers">
+//                         <div class="icon">
+//                             <span class="material-icons-sharp"> person </span>
+//                         </div>
+//                         <div class="right">
+//                             <div class="info">
+//                                 <h3>New Customers</h3>
+//                                 <small class="text-muted">Last 25 Hours</small>
+//                             </div>
+//                             <h5 class="success">+19%</h5>
+//                             <h3>1200</h3>
+//                         </div>
+//                     </div>
